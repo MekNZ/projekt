@@ -1,0 +1,21 @@
+#header {
+    border-bottom: 1px solid gray;
+}
+
+#list {
+    border-style: ridge;
+    top: 0px;
+    width: 190px;
+    background-color: lightblue;
+}
+
+.banan{
+    height: 500px;
+    background-color: aliceblue;
+    border-style: groove;
+    float: right;
+    position: relative;
+}
+
+
+    

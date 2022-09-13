@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Min Tabell</title>
+    <meta name="MekN" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+</head>
+
+<body>
+    <style>
+        form {
+            border: 2px solid black;
+            text-align: center;
+        }
+
+        #edu{
+            border-collapse: collapse;
+            border: 2px solid gray;
+            border-block: auto;
+        
+        }
+
+    </style>
+
+
+
+    <form method="post" target="_blank">
+        <div>
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname" placeholder="Enter First Name"><br>
+        </div>
+
+        <div>
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname" placeholder="Enter Last Name"><br><br>
+        </div>
+
+        <div>
+            <label for="email">Email:</label><br>
+            <input autocomplete="off" type="email" id="email" name="email" placeholder="Enter email"><br><br>
+        </div>
+
+        <div>
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="Password" placeholder="Enter password"><br><br>
+            <label for="password">Repeat password:</label><br>
+            <input type="password" name="Password" placeholder="Enter password again"><br><br>
+        </div>
+
+        <aside id="edu">
+            <label for="elevel">Education level</label><br><br>
+            <input type="radio" id="elevel" name="elevel"><span>Grundskola</span><br><br>
+            <input type="radio" name="elevel"><span>Gymnasium</span><br><br>
+            <input type="radio" name="elevel"><span>Högskola</span><br><br>
+        </aside>
+
+        <div>
+            <label for="interest">Pick your interests</label><br>
+            <input type="checkbox" id="interest" name="checkbox"><span>Fotboll</span><br>
+            <input type="checkbox" name="checkbox"><span>Music</span><br>
+            <input type="checkbox" name="checkbox"><span>Tech</span><br>
+            <input type="checkbox" name="checkbox"><span>Gaming</span><br>
+            <input type="checkbox" name="checkbox"><span>Gym</span><br><br>
+
+            <select name="select" id="select">
+                <option value="Fotboll">Fotboll</option>
+                <option value="Music">Music</option>
+                <option value="Tech">Tech</option>
+                <option value="Gaming">Gaming</option>
+                <option value="Gym">Gym</option>
+            </select><br><br>
+        </div>
+
+
+
+
+
+        <input type="submit" value="Submit">
+    </form>
+
+
+    <script src="" async defer></script>
+</body>
+
+</html>

@@ -1,0 +1,208 @@
+body {
+    background-color: rgba(194, 206, 218, 0.4);
+}
+
+#nav-container {
+    text-align: center;
+}
+
+#nav-container h1 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, 'Courier New', Courier, monospace;
+    text-align: center;
+}
+
+.nav-menu {
+    background-color: #333;
+    padding: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+
+}
+
+.nav-menu ul {
+    list-style: none;
+    float: inherit;
+    background-color: #333;
+}
+
+.nav-menu li {
+    font-family: Verdana, Geneva, Tahoma, sans-serif, fantasy;
+    padding: 5px;
+    display: -webkit-inline-flex;
+    list-style: none;
+
+}
+
+.nav-menu li a {
+    display: inline;
+    color: wheat;
+    text-decoration: none;
+}
+
+.nav-menu li a:hover {
+    color: #79cec7;
+    background-color: rgb(148, 111, 111);
+}
+
+.nav-menu li a:active {
+    color: #79cec7;
+    background-color: #075a0f;
+}
+
+article h2 {
+    text-align: center;
+}
+
+.section {
+    border: 2px solid black;
+    margin: 100px;
+    padding: 100px;
+    background-image: url("../img/my.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.section p {
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: oblique;
+}
+
+.side-container {
+    position: absolute;
+    float: left;
+    padding: 50px;
+    margin: 90px;
+}
+
+/* End of Homepage -------------------------------------------------------------------------------------------------------------*/
+
+
+
+/* Start of Second Page --------------------------------------------------------------------------------------------------------------*/
+
+
+main h2 {
+    text-align: center;
+}
+
+#main-container {
+    background-color: #777;
+
+}
+
+
+.collapsible {
+    background-color: #777;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+}
+
+.active,
+.collapsible:hover {
+    background-color: #555;
+}
+
+.collapsible:after {
+    content: '\002B';
+    color: white;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2212";
+}
+
+.content {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #f1f1f1;
+}
+
+/* End of Second page -----------------------------------------------------------------------------------------------------------*/
+
+
+
+/*Start of contact page----------------------------------------------------------------------------------------------------------*/
+
+#form-container {
+    background-image: url(../img/pic1.jpg);
+    background-size: cover;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 25px;
+    position: relative;
+}
+
+form {
+    display: inline-block;
+    margin: 100;
+    padding: 50px;
+
+}
+
+.label {
+    font-family: 'Courier New', Courier, monospaces;
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+
+}
+
+input[type=text],
+[type=email],
+textarea {
+    width: 50%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #34eb46;
+    width: 50%;
+    padding: 12px;
+    border-radius: 10px;
+    resize: vertical;
+}
+
+input[type=submit]:hover {
+    background-color: #79cec7;
+}
+
+.input {
+    font-family: 'Courier New', Courier, monospace;
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+
+#map {
+    position: absolute;
+    border-radius: 10px;
+    width: 30%;
+    height: 280px;
+    bottom: 85px;
+    left: 870px;
+    
+}
+
+
+footer {
+    font-size: small;
+    font-family: 'Lucida Sans', Geneva, cursive;
+    position: sticky;
+    text-align: center;
+    overflow: hidden;
+}

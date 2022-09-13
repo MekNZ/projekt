@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script type="module" src=".index.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+</head>
+
+<body>
+
+    <h1>My First Google Map</h1>
+
+    <div id="map"></div>
+
+    <script>
+        function initMap() {
+            const myLocation = {
+                lat: 59.3097143, lng: 18.0304124
+            };
+            const map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 4, center: myLocation
+            });
+
+            const marker = new google.maps.Marker({
+                position: myLocation,
+                map: map
+            });
+        }
+
+        window.initMap = initMap;
+    </script>
+
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAp6f-hOGZ0CabQO_1W3f71JsUT-tO9sgw&callback=initMap"
+        ></script>
+
+
+</body>
+
+</html>

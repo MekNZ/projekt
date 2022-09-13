@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<html lang="sv">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>CSS</title>
+    <meta name="Mekn" content="CSS">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../nycss/css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+
+<body>
+
+    <header id="nav-container">
+        <h1>Information om oss</h1>
+
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="../nycss/index.html">Home</a></li>
+                <li><a href="../nycss/second.html">About us</a></li>
+                <li><a href="../nycss/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main-container">
+        <h2>Vad är min hemsida</h2>
+        <article class="collapse-container">
+            <button class="collapsible">Hur funkar hemsidan?</button>
+            <div class="content">
+                <p>
+                    Don't bother typing “lorem ipsum” into Google translate.
+                    If you already tried, you may have gotten anything from "NATO" to "China",
+                    depending on how you capitalized the letters. The bizarre translation was fodder for conspiracy
+                    theories,
+                    but Google has since updated its “lorem ipsum” translation to, boringly enough, “lorem ipsum”.
+                </p>
+            </div>
+            <button class="collapsible">Om bla bla bla</button>
+            <div class="content">
+                <p>
+                    Don't bother typing “lorem ipsum” into Google translate.
+                    If you already tried, you may have gotten anything from "NATO" to "China",
+                    depending on how you capitalized the letters. The bizarre translation was fodder for conspiracy
+                    theories,
+                    but Google has since updated its “lorem ipsum” translation to, boringly enough, “lorem ipsum”.
+                </p>
+            </div>
+            <button class="collapsible">Hur kontaktar du oss?</button>
+            <div class="content">
+                <p>
+                    Don't bother typing “lorem ipsum” into Google translate.
+                    If you already tried, you may have gotten anything from "NATO" to "China",
+                    depending on how you capitalized the letters. The bizarre translation was fodder for conspiracy
+                    theories,
+                    but Google has since updated its “lorem ipsum” translation to, boringly enough, “lorem ipsum”.
+                </p>
+            </div>
+        </article>
+
+    </main>
+
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function handleClick() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.maxHeight) {
+                    content.style.maxHeight = null;
+                } else {
+                    content.style.maxHeight = content.scrollHeight + "px";
+                }
+            });
+        }
+    </script>
+
+    <footer>
+        <p>Powered by MekN</p><span></span>
+        <i class="material-icons">computer</i>
+    </footer>
+
+</body>
+
+</html>

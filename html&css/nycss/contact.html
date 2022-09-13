@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+<html lang="sv">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>CSS</title>
+    <meta name="Mekn" content="CSS">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../nycss/css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script type="module" src=".index.js"></script>
+</head>
+
+<body>
+
+    <header id="nav-container">
+        <h1>Fyll i formulären nedan</h1>
+
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="../nycss/index.html">Home</a></li>
+                <li><a href="../nycss/second.html">About us</a></li>
+                <li><a href="../nycss/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="form-container">
+        <form action="#">
+            <div class="label">
+                <label for="fname">Namn</label><br><br>
+            </div>
+
+            <div class="input">
+                <input type="text" autocomplete="off" id="fname" name="fname" placeholder="Namn.."><br><br>
+            </div>
+
+            <div class="label">
+                <label for="lname">Efternamn</label><br><br>
+            </div>
+
+            <div class="input">
+                <input type="text" autocomplete="off" id="lname" name="lname" placeholder="Efternam.."><br><br>
+            </div>
+
+            <div class="label">
+                <label for="email">Email</label><br><br>
+            </div>
+
+            <div class="input">
+                <input type="email" id="email" autocomplete="off" name="email" placeholder="Email.."><br><br>
+            </div>
+
+            <div class="label">Frågor</label><br><br>
+            </div>
+
+            <div class="input">
+                <textarea id="kontakt" name="kontakt" placeholder="Skriv något.."></textarea>
+                <input type="submit" value="Skicka">
+            </div>
+
+        </form>
+
+        <div id="map"></div>
+
+        <script>
+            function initMap() {
+                const myLocation = {
+                    lat: 59.3097143, lng: 18.0304124
+                };
+                const map = new google.maps.Map(document.getElementById("map"), {
+                    zoom: 12, center: myLocation
+                });
+    
+                const marker = new google.maps.Marker({
+                    position: myLocation,
+                    map: map
+                });
+            }
+    
+            window.initMap = initMap;
+        </script>
+    
+        <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAp6f-hOGZ0CabQO_1W3f71JsUT-tO9sgw&callback=initMap"
+            ></script>
+    </main>
+
+    <footer>
+        <p>Powered by MekN</p><span></span>
+        <i class="material-icons">computer</i>
+    </footer>
+
+</body>
+
+</html>
